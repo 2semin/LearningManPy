@@ -1,0 +1,17 @@
+<html>
+<!-- <input id="number1"/>
+    <b>-</b> -->
+    <!-- <input id="number2"/>  -->
+    <button id="submit">=</button> 
+    <!-- <input id = "result"/> -->
+     <div id="output"></div>
+<script>
+    let str = "안녕하세요 반갑습니다 " ;
+    document.getElementById("submit").addEventListener("click", ()=>{
+        newStr = str.slice(1,str.length) + str[0];
+        document.getElementById('output').innerText = newStr;
+        str = newStr;
+    })
+</script>
+    
+</html>
