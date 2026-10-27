@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소프트웨어 동아리</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .menu {
+        width: 220px;
+        background-color: #eeeeee;
+        padding: 20px;
+    }
+
+    .content {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .schedule {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .schedule th,
+    .schedule td {
+        border: 1px solid #cccccc;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .schedule th {
+        background-color: #eeeeee;
+    }
+
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    #output {
+        height: 100px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <h2>회원 목차</h2>
+            <p><a href="#intro">동아리 소개</a></p>
+            <p><a href="#kim">김민준</a></p>
+            <p><a href="#lee">이서연</a></p>
+            <p><a href="#park">박지훈</a></p>
+            <p><a href="#choi">최유진</a></p>
+            <p><a href="https://www.instagram.com/s2seolhyuns2/">설현</a></p>
+            <p><a href="#schedule">동아리 모임 시간표</a></p>
+
+        </div>
+        <div class="content">
+
+            <!-- 동아리 소개 -->
+           
+            <h1 id="intro">소프트웨어 동아리</h1>
+                <p>
+                    우리 동아리는 <strong>소프트웨어와 웹 기술</strong>에 관심이 있는
+                    학생들이 함께 활동하는 동아리입니다.
+                </p>
+                <p>
+                    다양한 프로젝트를 수행하면서
+                    <strong>프로그래밍 능력과 협업 능력</strong>을
+                    함께 키우는 것을 목표로 합니다.
+                </p>
+                <hr>
+                <h3>주요 활동</h3>
+                <ul type="circle">
+                    <li>웹사이트 개발</li>
+                    <li>모바일 앱 개발</li>
+                    <li>인공지능 프로젝트</li>
+                    <li>팀 프로젝트</li>
+                </ul>
+                <hr>
+                <h1 id="kim">김민준</h1>
+                <img src="./assets/images/student1.jpg">
+                <p>
+                    <strong>학년:</strong> <span id="grade1">3학년</span>
+                </p>
+                <p>
+                    <strong>관심 분야:</strong>
+                    웹 개발, JavaScript
+                </p>
+                <p>
+                    새로운 웹 서비스를 만드는 것을 좋아합니다.
+                    <em>프론트엔드 개발자</em>를 꿈꾸고 있습니다.
+                </p>
+                <h1 id="lee">이서연</h1>
+                <img src="./assets/images/student2.jfif">
+                <p>
+                    <strong>학년:</strong> <span id="grade2">2학년</span>
+                </p>
+                <p>
+                    <strong>관심 분야:</strong>
+                    인공지능, Python
+                </p>
+                <p>
+                    인공지능 기술을 공부하고 있습니다.
+                    데이터를 분석하고 문제를 해결하는 것을 좋아합니다.
+                </p>
+                <h1 id="park">박지훈</h1>
+                <img src="./assets/images/student3.jpg">
+                <p>
+                    <strong>학년:</strong> <span id="grade3">4학년</span>
+                </p>
+                <p>
+                    <strong>관심 분야:</strong>
+                    모바일 앱, React Native
+                </p>
+                <p>
+                    모바일 애플리케이션 개발에 관심이 많습니다.
+                    <b>팀 프로젝트</b>를 통해 다양한 서비스를 만들어 보고 있습니다.
+                </p>
+                <h1 id="choi">최유진</h1>
+                <img src="./assets/images/student4.jfif">
+                <p>
+                    <strong>학년:</strong> <span id="grade4">1학년</span>
+                </p>
+                <p>
+                    <strong>관심 분야:</strong>
+                    UI/UX 디자인
+                </p>
+                <p>
+                    사용하기 편리하고 아름다운 웹사이트를 만드는 것에
+                    관심이 많습니다.
+                </p>
+                <hr>
+                <h1 id="schedule">동아리 모임 시간표</h1>
+                <table class="schedule">
+                    <tr>
+                        <th>요일</th>
+                        <th>시간</th>
+                        <th>활동</th>
+                        <th>장소</th>
+                    </tr>
+                    <tr>
+                        <td>월요일</td>
+                        <td>18:00 ~ 20:00</td>
+                        <td>웹 프로그래밍 학습</td>
+                        <td>컴퓨터실</td>
+                    </tr>
+                    <tr>
+                        <td>수요일</td>
+                        <td>18:00 ~ 20:00</td>
+                        <td>팀 프로젝트</td>
+                        <td>동아리실</td>
+                    </tr>
+                    <tr>
+                        <td>금요일</td>
+                        <td>18:00 ~ 19:30</td>
+                        <td>코딩 스터디</td>
+                        <td>컴퓨터실</td>
+                    </tr>
+                    <tr>
+                        <td>토요일</td>
+                        <td>14:00 ~ 17:00</td>
+                        <td>프로젝트 발표 및 토론</td>
+                        <td>세미나실</td>
+                    </tr>
+                </table>
+                <hr>
+                길이:<input id = "length" type = "number" /> <button id="submit">제출</button>
+                <div id="output"></div>
+
+        </div>
+
+    </div>
+
+    
+</body>
+<script>
+    document.getElementById("submit").addEventListener("click", ()=>{
+        let length = document.getElementById('length').value;
+        let tmp = '';
+        for(let i = 1; i <= length; i++){
+            tmp = tmp + '*';
+        }
+        document.getElementById('output').innerText = tmp;
+    });
+</script>
+
+</html>
+                <!-- document.getElementById('output').innerText = "A학점";
+                break;
+            case 8:
+                document.getElementById('output').innerText = "B학점";
+                    break;
+            default:
+                document.getElementById('output').innerText = "F학점";
+        }
+        // if (score >= 0 && score <= 100) {
+        //     if(score >= 70){
+        //         document.getElementById('output').innerText = "합격"
+        //     } else {
+        //         document.getElementById('output').innerText = "불합격"
+        //     }
+        // } else {
+        //     document.getElementById('output').innerText = "올바른 점수를 입력하세요";
+            
+        // }
+    });
+</script> -->
+
+</html>
