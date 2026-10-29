@@ -187,14 +187,28 @@
     document.getElementById("submit").addEventListener("click", ()=>{
         let length = document.getElementById('length').value;
         let tmp = '';
-        for(let i = 1; i <= length; i++){
-            tmp = tmp + '*';
+        for(let i = 0; i < length ; i++){
+            for(let j = 0; j <i+1 ; j++){
+                tmp += '*'
+            }
+            tmp += '\n';
         }
         document.getElementById('output').innerText = tmp;
     });
 </script>
 
 </html>
+<!-- document.getElementById("submit").addEventListener("click", ()=>{
+        let length = document.getElementById('length').value;
+        let tmp = '';
+        for(let i = length; i > 0 ; i--){
+            for(let j = 0; j <i ; j++){
+                tmp += '*'
+            }
+            tmp += '\n';
+        }
+        document.getElementById('output').innerText = tmp; /// 역순으로 별 찍기
+    }); -->
                 <!-- document.getElementById('output').innerText = "A학점";
                 break;
             case 8:

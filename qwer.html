@@ -1,0 +1,13 @@
+<input id = "num"><button id = "submit">결과</button>
+<div id = "output"></div>
+<script>
+    const array = [];
+
+    document.getElementById("submit").addEventListener("click", ()=>{
+        let num = parseInt(document.getElementById('num').value);
+        if(!array.includes(num)){
+            array.push(num);
+            document.getElementById('output').innerText = array.join(',');
+        }
+    })
+</script>
