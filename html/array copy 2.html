@@ -1,5 +1,5 @@
 <script>
-const arr = [6, 3, 10, 11, 77 , 73];
+const arr = [6000, 3000, 10000, 11000, 77000 , 73000];
 let arr2 = arr.map(
     function(value){
         if(value >= 10000){
@@ -8,7 +8,12 @@ let arr2 = arr.map(
         return value *2
         }
     }
-);
- //map 사용시 리턴값이 있어야한다. 리턴값이 없으면 undefined가 들어간다. arr2 는 [12, 6, 20, 22, 154, 146] 이 된다.
+); //map 사용시 리턴값이 있어야한다. 리턴값이 없으면 undefined가 들어간다. arr2 는 [12, 6, 20, 22, 154, 146] 이 된다.
+console.log(arr2);
+const arr1 = [6, 3, 10, 11, 77 , 73];
+
+let arr3 = arr1.map((value , i) => value *2 );
+
+ //map 사용시 리턴값이 있어야한다. 리턴값이 없으면 undefined가 들어간다. arr3 는 [12, 6, 20, 22, 154, 146] 이 된다.
 </script>
 
