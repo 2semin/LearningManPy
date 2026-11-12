@@ -75,8 +75,8 @@
         let arr = value.split(",");
         let arr1 = [];  
         arr.forEach(
-            function(value, i){
-                 document.getElementById("list").appendChild(stringToHtml("<li>" + value.trim() + "</li>"));
+            function(value){
+                 document.getElementById("list").appendChild(stringToHtml(`<li>${value.trim()}</li>`));
             }
             
         
