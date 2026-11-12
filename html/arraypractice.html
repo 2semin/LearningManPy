@@ -61,15 +61,21 @@
 <script>
     
     document.getElementById("submit").addEventListener("click", ()=>{ 
+        function stringToHtml(str){
+            const template = document.createElement("template");
+            template.innerHTML = str.trim   ();
+            return template.content.firstChild;
+        }
+        
         let value = document.getElementById("input").value;
         let arr = value.split(",");
-        let arr2 = arr.map((n)=>n.trim()); // 화살표 함수로 코드 줄이기
+        let arr2 = arr.map((n)=>stringToHtml(`<li>${n.trim()}</li>`)); // 화살표 함수로 코드 줄이기
         // let arr2 = arr.map(
         //     function(n){
         //         return n.trim();
         //     }
         // ) 화살표 함수 안 쓰고 정석.
-        document.getElementById("output").innerText = arr;
+        document.getElementById("output").innerHTML = arr2;
     })
     </script>
 </html>
