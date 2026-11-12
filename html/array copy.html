@@ -1,0 +1,19 @@
+<script>
+const arr = [6000, 3000, 10000, 11000, 77000 , 73000];
+let arr1 = [];
+arr.forEach(
+    function(value, i){
+        if(value > 10000){
+            arr1.push(value + value * 0.1);
+        }else{
+            arr1.push(value * 2);
+        }
+    }
+);
+
+let arr2 = [];
+for(let i = 0 ; i < arr.length; i++){
+    arr2.push(arr[i] * 2);
+}
+</script>
+
