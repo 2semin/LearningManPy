@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소프트웨어 동아리</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        height: 100vh;
+    }
+
+    .menu {
+        width: 220px;
+        background-color: #eeeeee;
+        padding: 20px;
+    }
+
+    .content {
+        flex: 1;
+        padding: 40px;
+    }
+
+    .schedule {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .schedule th,
+    .schedule td {
+        border: 1px solid #cccccc;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .schedule th {
+        background-color: #eeeeee;
+    }
+
+
+    img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    #output {
+        height: 100px;
+    }
+</style>
+
+<body>
+
+
+    <input id = "input"><button id = "submit">제출</button>
+    <div id = "output"></div>
+     
+</body>
+<script>
+    
+    document.getElementById("submit").addEventListener("click", ()=>{ 
+        let value = document.getElementById("input").value;
+        let arr = value.split(",");
+        let arr2 = arr.map((n)=>n.trim()); // 화살표 함수로 코드 줄이기
+        // let arr2 = arr.map(
+        //     function(n){
+        //         return n.trim();
+        //     }
+        // ) 화살표 함수 안 쓰고 정석.
+        document.getElementById("output").innerText = arr;
+       
+    })
+    </script>
+</html>
