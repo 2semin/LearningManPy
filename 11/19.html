@@ -1,0 +1,19 @@
+// [1,2,3,4,5].map(함수);
+// [1,2,3,4,5].reduce(function(a, c){
+    if(c%2 !== 0){
+        a.push(c);
+    }
+    return a;
+// }, []); 
+
+
+let result = [1,2,3,4,5].every(
+    function(a,i){
+        if(a < 5){
+            return true;
+        }
+        return false;
+        }
+)
+
+setTimeoout(function() {alert('시간이 경과됨');}, 1000);
