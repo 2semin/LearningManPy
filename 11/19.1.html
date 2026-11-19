@@ -49,6 +49,14 @@
     #output {
         height: 100px;
     }
+    
+    button{
+        width: 100px;
+        height: 50px;
+    }
+    .hello{
+        background-color: red;
+    }
 </style>
 
 <body>
@@ -56,6 +64,9 @@
 
     <input id = "input">
     <button id = "button">시작</button>
+    <button class = "hello">입력</button>
+    <button class = "hello">버튼2</button>
+    <button>버튼3</button>
     <!-- <button id = "stop">멈춰</button> -->
     <div id = "output">
     <ol id = "list">
@@ -64,14 +75,14 @@
         <li>사과</li>
         <li>망고</li>
         <li>오렌지</li>
-
     </ol>
     </div>
     <input id = "second"/>
 </body>
 <script>
-    const $$items = document.querySelectorAll('li');
-    console.log($$items); //document.getElementById("input")와 동일
+    const $items = document.querySelector('li');
+    console.log($items.textContent); //document.getElementById("input")와 동일
+    $items.textContent = '아무거나';
     // function stringToHtml(str){
     //         const template = document.createElement("template");
     //         template.innerHTML = str.trim   ();
