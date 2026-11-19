@@ -58,28 +58,37 @@
     <button id = "button">시작</button>
     <!-- <button id = "stop">멈춰</button> -->
     <div id = "output">
-    <ul id = "list"></ul>
+    <ol id = "list">
+        <li>수박</li>
+        <li>참외</li>
+        <li>사과</li>
+        <li>망고</li>
+        <li>오렌지</li>
+
+    </ol>
     </div>
-     
+    <input id = "second"/>
 </body>
 <script>
-    function stringToHtml(str){
-            const template = document.createElement("template");
-            template.innerHTML = str.trim   ();
-            return template.content.firstChild;
-        }
-    let id;
-    let state = false;
-    document.getElementById("button").addEventListener("click", function(){
-        state = !state;
-        document.getElementById('button').innerText = state ? '멈춰' : '시작';
-        if(state){
-        id = setInterval(function() {
-            document.getElementById("list").appendChild(stringToHtml(`<li>아이템</li>`));}, 1000);
-        }else{
-            clearInterval(id);   
-        }
-    });
+    const $$items = document.querySelectorAll('li');
+    console.log($$items); //document.getElementById("input")와 동일
+    // function stringToHtml(str){
+    //         const template = document.createElement("template");
+    //         template.innerHTML = str.trim   ();
+    //         return template.content.firstChild;
+    //     }
+    // let id;
+    // let state = false;
+    // document.getElementById("button").addEventListener("click", function(){
+    //     state = !state;
+    //     document.getElementById('button').innerText = state ? '멈춰' : '시작';
+    //     if(state){
+    //     id = setInterval(function() {
+    //         document.getElementById("list").appendChild(stringToHtml(`<li>아이템</li>`));}, 1000);
+    //     }else{
+    //         clearInterval(id);   
+    //     }
+    // });
        
         // const id = setInterval(function() {
         //     document.getElementById("list").appendChild(stringToHtml(`<li>아이템</li>`));}, 1000);
