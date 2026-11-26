@@ -34,18 +34,18 @@
             }
         }
         function addMessage(text){
-            bot.textContent = text;
+            $bot.textContent = text;
         }
         function sendMessage(){
-            const question = input.value.trim();
+            const question = $input.value.trim();
             if(question === '') return;
             const answer = makeAnswer(question);
             addMessage(`챗봇 : ${answer}`);
-            input.value = '';
-            input.focus();
+            $input.value = '';
+            $input.focus();
         }
-        send.addEventListener('click', sendMessage);
-        input.addEventListener('keydown', function(e){
+        $send.addEventListener('click', sendMessage);
+        $input.addEventListener('keydown', function(e){
             if(e.key ==='Enter'){
                 sendMessage();
             }
