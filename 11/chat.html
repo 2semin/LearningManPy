@@ -7,19 +7,19 @@
 </head>
 <body>
     <h2>자바스크립트 챗봇</h2>
-    <div id = "chat bot">
+    <div id = "chat-bot">
         <div id ="bot">
             챗봇: 안녕하세요! 무엇을 도와드릴까요?
         </div>
     </div>
     <input type = "text" id = "input" 
-    placeholder="메시지를 입력하세요.">
+        placeholder="메시지를 입력하세요.">
     <button id = "send">전송</button>
     <script>
         const input = document.getElementById('input');
         const send = document.getElementById('send');
         const bot = document.getElementById('bot');
-        function amkeAnswer(question){
+        function makeAnswer(question){
             if(question.includes('안녕')){
                 return '안녕하세요! 반갑습니다';
             }
@@ -34,7 +34,7 @@
             }
         }
         function addMessage(text){
-            bot.textcontent = text;
+            bot.textContent = text;
         }
         function sendMessage(){
             const question = input.value.trim();
