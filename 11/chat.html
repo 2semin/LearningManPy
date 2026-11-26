@@ -16,9 +16,9 @@
         placeholder="메시지를 입력하세요.">
     <button id = "send">전송</button>
     <script>
-        const input = document.getElementById('input');
-        const send = document.getElementById('send');
-        const bot = document.getElementById('bot');
+        const $input = document.getElementById('input');
+        const $send = document.getElementById('send');
+        const $bot = document.getElementById('bot');
         function makeAnswer(question){
             if(question.includes('안녕')){
                 return '안녕하세요! 반갑습니다';
